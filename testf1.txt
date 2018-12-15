@@ -1,4 +1,4 @@
-//BasicCalculatorBySSK
+//BasicCalculatorByShubham
 
 #include<iostream.h>
 #include<conio.h>
