@@ -1,0 +1,90 @@
+//BasicCalculatorBySSK
+
+#include<iostream.h>
+#include<conio.h>
+
+void add(int a, int b)
+{
+    int ans = a+b;
+}
+
+void sub(int a, int b)
+{
+    int ans=0;
+    if(a>b)
+    {
+        ans = a-b;
+    }
+
+    else
+    {
+        ans = b-a;}
+}
+
+void mult(int a, int b)
+{
+    int ans = a*b;
+}
+
+void div(int a, int b)
+{
+    int ans = a/b;
+}
+
+void mod(int a, int b)
+{
+    int ans = a%b;
+}
+
+int main()
+{
+
+    int a=0;
+    int b=0;
+
+    char ans = 'y'
+    int choice;
+    do{
+        cout<<"***********WELCOME EARTHLING**************"
+        cout<<"\n1. Add "
+        cout<<"\n2. Subtract "
+        cout<<"\n3. Divide"
+        cout<<"\n4. Multiply"
+        cout<<"\n5. Remainder/n"
+
+        cin>>choice;
+        cout<<"\nEnter the numbers";
+        cin>>a;
+        cout<<"\n"
+        cin>>b;
+        switch(choice)
+        {
+            case 1:
+                cout<<"The ans is  ";
+                add(a,b);
+
+            case 2:
+                cout<<"The ans is  ";
+                sub(a,b);
+
+            case 3:
+                cout<<"The ans is  ";
+                mult(a,b);
+
+            case 4:
+                cout<<"The ans is  ";
+                div(a,b);
+
+            case 5:
+                cout<<"The ans is  ";
+                rem(a,b);
+
+            default:
+                cout<<"Wrong Choice Made!"
+        }
+    cout<<"Do you want to continue(y/n)\n"
+    cin>>ans;
+    }while(ans == 'y')
+
+return 0;
+}
